@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Toeic</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_session_rapide">Session Rapide</string>
+    <string name="title_activity_session_rapide2">Session Rapide 2/10</string>
+    <string name="title_activity_choix">Choix de la série</string>
+    <string name="title_activity_session_rapide_correction">Correction de la première réponse
+    </string>
+    <string name="title_activity_session_rapide3">Session Rapide 3/30</string>
+    <string name="title_activity_session_rapide4">Session Rapide 4/30</string>
+    <string name="title_activity_session_rapide5">Session Rapide 5/30</string>
+    <string name="title_activity_session_rapide6">Session Rapide 6/30</string>
+    <string name="title_activity_session_rapide7">Session Rapide 7/30</string>
+    <string name="title_activity_session_rapide8">Session Rapide 8/30</string>
+    <string name="title_activity_session_rapide9">Session Rapide 9/30</string>
+    <string name="title_activity_session_rapide10">Session Rapide 10/30</string>
+    <string name="title_activity_session_rapide11">Session Rapide 11/30</string>
+    <string name="title_activity_session_rapide12">Session Rapide 12/30</string>
+</resources>

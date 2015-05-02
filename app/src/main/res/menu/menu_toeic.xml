@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Toeic">
+    <item
+        android:id="@+id/session_rapide"
+        android:title="Session Rapide"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/session_complete"
+        android:title="Session complète"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/statistiques"
+        android:title="Statistiques"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
