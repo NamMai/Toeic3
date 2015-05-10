@@ -1,6 +1,7 @@
 package com.example.nam.toeic;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.SystemClock;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,11 +26,22 @@ public class session_rapide extends ActionBarActivity implements AdapterView.OnI
     List<String> valuesList;
     ArrayAdapter<String> adapter;
     TextView textView1;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_session_rapide);
+
+        Button button = (Button) findViewById(R.id.button8);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(session_rapide.this, session_rapide2.class);
+                startActivity(intent);
+            }
+        });
 
         valuesList= new ArrayList<String>();
         valuesList.add("(A) would decrease");
@@ -77,11 +90,15 @@ public class session_rapide extends ActionBarActivity implements AdapterView.OnI
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
         if (position == 0) {
             Toast toast = Toast.makeText(this, "Bravo : (A) would decrease", Toast.LENGTH_SHORT);
             TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
             v.setTextColor(-16711936);
             toast.show();
+
+
 
         }
         else if (position ==1)
@@ -101,6 +118,7 @@ public class session_rapide extends ActionBarActivity implements AdapterView.OnI
             toast.show();
 
 
+
         }
         else if (position == 3)
         {
@@ -109,11 +127,10 @@ public class session_rapide extends ActionBarActivity implements AdapterView.OnI
             v.setTextColor(-16711681);
             toast.show();
 
-
         }
 
-        Intent intent = new Intent(this, session_rapide2.class);
+        Intent intent = new Intent(this, session_rapide.class);
         startActivity(intent);
-        SystemClock.sleep(1000);
+
     }
 }

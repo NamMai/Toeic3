@@ -58,7 +58,7 @@ public class session_rapide10 extends ActionBarActivity implements AdapterView.O
             v.setTextColor(-16711681);
             toast.show();
 
-            Intent intent = new Intent(this, session_rapide11.class);
+            Intent intent = new Intent(this, session_rapide12.class);
 
             startActivity(intent);
         }
@@ -69,7 +69,7 @@ public class session_rapide10 extends ActionBarActivity implements AdapterView.O
             v.setTextColor(-16711681);
             toast.show();
 
-            Intent intent = new Intent(this, session_rapide11.class);
+            Intent intent = new Intent(this, session_rapide12.class);
             startActivity(intent);
         }
         else if (position == 2)
@@ -79,7 +79,7 @@ public class session_rapide10 extends ActionBarActivity implements AdapterView.O
             v.setTextColor(-16711681);
             toast.show();
 
-            Intent intent = new Intent (this, session_rapide11.class);
+            Intent intent = new Intent (this, session_rapide12.class);
             startActivity(intent);
         }
         else if (position == 3)
@@ -89,7 +89,7 @@ public class session_rapide10 extends ActionBarActivity implements AdapterView.O
             v.setTextColor(-16711936);
             toast.show();
 
-            Intent intent = new Intent (this, session_rapide11.class);
+            Intent intent = new Intent (this, session_rapide12.class);
             startActivity(intent);
         }
     }
